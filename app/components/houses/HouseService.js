@@ -25,11 +25,6 @@ export default class HouseService {
     }
 
 
-
-    yearBuilt
-    price
-    imgUrl
-
     addHouse(formData) {
         let newHouse = new House(
             formData.name.value,
