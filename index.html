@@ -36,6 +36,56 @@
     </div>
   </div>
 
+  <form onsubmit="app.controllers.jobController.addJob(event)">
+    <input type="text" name="jobName" placeholder="Company Name" required>
+    <input type="text" name="jobType" placeholder="Job Type" required>
+    <input type="text" name="position" placeholder="Position">
+    <input type="text" name="payRate" placeholder="Pay Rate" required>
+    <input type="text" name="hours" placeholder="Full-Time or Part-Time" required>
+    <button type="submit">Add Job</button>
+  </form>
+
+  <div class="container">
+    <div id="jobs" class="row">
+
+      <!-- <div class="col-3">
+        <p>${job.jobName}</p>
+        <p>${job.jobType}</p>
+        <p>${job.position}</p>
+        <p>${job.payRate}</p>
+        <p>${job.hours}</p>
+      </div> -->
+
+    </div>
+  </div>
+
+  <form onsubmit="app.controllers.houseController.addHouse(event)">
+    <input type="text" name="bedroomQty" placeholder="Bedrooms" required>
+    <input type="text" name="bathroomQty" placeholder="Bathrooms" required>
+    <input type="text" name="houseType" placeholder="House Type" required>
+    <input type="text" name="levels" placeholder="Levels" required>
+    <input type="text" name="yearBuilt" placeholder="Year Built" required>
+    <input type="text" name="price" placeholder="Price" required>
+    <input type="url" name="imgUrl" placeholder="Image Link" required>
+    <button type="submit">Add House</button>
+  </form>
+
+
+  <div class="container">
+    <div id="houses" class="row">
+
+        <!-- <div class="col-3">
+            <p>${house.bedroomQty}</p>
+            <p>${house.bathroomQty}</p>
+            <p>${house.houseType}</p>
+            <p>${house.levels}</p>
+            <p>${house.yearBuilt}</p>
+            <p>${house.price}</p>
+            <p>${house.imgUrl}</p>
+          </div> -->
+
+    </div>
+  </div>
 
   <script src="main.js" type="module"></script>
 </body>
