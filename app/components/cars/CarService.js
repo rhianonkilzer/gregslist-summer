@@ -9,15 +9,6 @@ export default class CarService {
 
   getCars() {
     let carsCopy = []
-
-    //same as below
-    // for (let i = 0; i < cars.length; i++) {
-    //   const car = cars[i];
-
-    // }
-
-    // this is just saying for each 'car'
-    //  in the whole cars array do whatever is in the code block 
     cars.forEach(car => {
       carsCopy.push(new Car(
         car.make,
