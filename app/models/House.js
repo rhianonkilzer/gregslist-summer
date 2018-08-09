@@ -5,7 +5,6 @@ export default class House {
         name, 
         bedroomQty, 
         bathroomQty, 
-        houseType,
         levels,
         yearBuilt, 
         price, 
@@ -14,7 +13,6 @@ export default class House {
 this.name= name,
 this.bedroomQty = bedroomQty
 this.bathroomQty = bathroomQty
-this.houseType = houseType
 this.levels = levels
 this.yearBuilt = yearBuilt
 this.price = price

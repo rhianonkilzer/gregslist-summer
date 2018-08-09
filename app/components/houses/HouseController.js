@@ -13,7 +13,6 @@ function drawHouses() {
             <p>${house.name}</p>
             <p>${house.bedroomQty}</p>
             <p>${house.bathroomQty}</p>
-            <p>${house.houseType}</p>
             <p>${house.levels}</p>
             <p>${house.yearBuilt}</p>
             <p>${house.price}</p>
