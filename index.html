@@ -23,8 +23,8 @@
     <input type="number" name="year" placeholder="Year" value="2000" required>
     <label for="price">Price</label>
     <input type="text" name="price" placeholder="Price" required>
-    <label for="color">Color</label>
-    <input type="text" name="description" placeholder="Description" required>
+    <label for="color">Description</label>
+    <input type="text" name="description" placeholder="Description">
     <label for="url">Photo</label>
     <input type="url" name="imgUrl" placeholder="Image Link" required>
     <button type="submit">Add Car</button>
@@ -48,12 +48,10 @@
     <input type="text" name="jobName" placeholder="Company Name" required>
     <label for="jobType">Job Category</label>
     <input type="text" name="jobType" placeholder="Job Type" required>
-    <label for="position">Position Title</label>
-    <input type="text" name="position" placeholder="Position">
     <label for="payRate">Pay</label>
     <input type="text" name="payRate" placeholder="Pay Rate" required>
-    <label for="hours">Hours</label>
-    <input type="text" name="hours" placeholder="Full-Time or Part-Time" required>
+    <label for="description">Description</label>
+    <input type="text" name="description" placeholder="Description">
     <button type="submit">Add Job</button>
   </form>
 
@@ -73,7 +71,7 @@
 
   <form onsubmit="app.controllers.houseController.addHouse(event)">
     <label for="name">Title</label>
-    <input type="text" name="name" placeholder="Title" required>
+    <input type="text" name="description" placeholder="Description">
     <label for="bedroomQty">Bedrooms</label>
     <input type="text" name="bedroomQty" placeholder="Bedrooms" required>
     <label for="bathroomQty">Bathrooms</label>
