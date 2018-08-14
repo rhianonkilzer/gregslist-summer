@@ -2,6 +2,7 @@
 
 export default class House {
     constructor(data) {
+        this._id = data._id
         this.bedroomQty = data.bedroomQty
         this.bathroomQty = data.bathroomQty
         this.levels = data.levels
