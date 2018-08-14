@@ -2,7 +2,7 @@ import House from '../../models/House.js'
 
 // @ts-ignore
 const housesApi = axios.create({
-    baseURL: 'https://bcw-gregslist.herokuapp.com/api/houses',
+    baseURL: 'https://bcw-gregslist.herokuapp.com/api/houses/',
     timeout: 3000
 })
 
@@ -23,10 +23,10 @@ export default class HouseService {
 
     addHouse(formData, draw) {
         let newHouse = new House({
-            bedrooms: formData.bedroomQty.value,
-            bathrooms: formData.bathroomQty.value,
+            bedrooms: formData.bedrooms.value,
+            bathrooms: formData.bathrooms.value,
             levels: formData.levels.value,
-            year: formData.yearBuilt.value,
+            year: formData.year.value,
             price: formData.price.value,
             imgUrl: formData.imgUrl.value,
             description: formData.description.value

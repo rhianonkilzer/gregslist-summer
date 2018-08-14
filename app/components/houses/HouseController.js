@@ -9,12 +9,12 @@ function drawHouses(houses) {
         const house = houses[i];
         template += `
         <div style="outline: 1px solid black" class="col-3">
-            <p>${house.description}</p>
-            <p>${house.bedroomQty}</p>
-            <p>${house.bathroomQty}</p>
+            <p>${house.bedrooms}</p>
+            <p>${house.bathrooms}</p>
             <p>${house.levels}</p>
-            <p>${house.yearBuilt}</p>
+            <p>${house.year}</p>
             <p>${house.price}</p>
+            <p>${house.description}</p>
             <button onclick="app.controllers.houseController.bid('${house._id}', ${house.price})">bid</button>
             <img src="${house.imgUrl}" alt="somethingelse">
             <button onclick="app.controllers.houseController.deleteHouse('${house._id}')">delete</button>
